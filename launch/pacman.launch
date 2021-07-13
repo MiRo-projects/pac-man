@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- Launch file for Pac-man game.  -->
+<!-- Includes Turtlebot3 and MiRo, which depends on working TB3 and MDK packages -->
+<launch>
+
+  <!-- Add custom Gazebo paths -->
+  <env name="GAZEBO_MODEL_PATH"
+      value="$(find pacman)/models:$(optenv MIRO_DIR_MDK)/sim/models:$(optenv GAZEBO_MODEL_PATH)" />
+  <env name="GAZEBO_RESOURCE_PATH"
+      value="$(optenv MIRO_DIR_MDK)/sim:$(optenv GAZEBO_RESOURCE_PATH)" />
+  <env name="GAZEBO_PLUGIN_PATH"
+      value="$(optenv MIRO_DIR_MDK)/bin/${MIRO_SYSTEM}:$(optenv GAZEBO_PLUGIN_PATH)" />
+
+  <!-- Specify which .world file to load -->
+  <arg name="world" default="$(find pacman)/worlds/pacman.world"/>
+
+  <!-- start Gazebo server with exposed ROS interface-->
+  <arg name="gazebo_ns" default="gazebo_server" doc="Gazebo namespace, typically 'gazebo' or 'gazebo_server'" />
+  <node name="$(arg gazebo_ns)"
+      pkg="gazebo_ros"
+      type="gzserver"
+      respawn="false"
+      required="true"
+      args="--physics ode --verbose $(arg world)"
+  />
+
+  <!-- Spawn a MiRo -->
+  <arg name="pacman_ns" default="pacman" doc="namespace (prefix) for 'pacman' robot" />
+  <arg name="x_pacman" default="0.0"/>
+  <arg name="y_pacman" default="-2.35"/>
+  <arg name="z_pacman" default="0"/>
+  <arg name="Y_pacman" default="3.14"/>
+
+  <node name="spawn_pacman" pkg="gazebo_ros" type="spawn_model" ns="$(arg pacman_ns)" args="-sdf -model $(arg pacman_ns) -file $(optenv MIRO_DIR_MDK)/sim/models/miro_model/miro_model.sdf -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_pacman) -y $(arg y_pacman) -z $(arg z_pacman) -Y $(arg Y_pacman)" />
+
+  <!-- Spawn a Turtlebot3 (Ghost) -->
+  <arg name="ghost_ns" default="/ghost" doc="namespace (prefix) for 'ghost' robot" />
+  <arg name="ghost_model" default="$(optenv TURTLEBOT3_MODEL waffle)"
+      doc="TB3 model type [burger, waffle, waffle_pi]"/>
+  <arg name="x_ghost" default="0.0"/>
+  <arg name="y_ghost" default="0.25"/>
+  <arg name="z_ghost" default="0"/>
+  <arg name="Y_ghost" default="1.57"/>
+
+  <param name="$(arg ghost_ns)/robot_description"
+    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
+
+  <node name="spawn_ghost" pkg="gazebo_ros" type="spawn_model" ns="$(arg ghost_ns)" args="-urdf -model turtlebot3_$(arg ghost_model) -param $(arg ghost_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_ghost) -y $(arg y_ghost) -z $(arg z_ghost) -Y $(arg Y_ghost)" />
+
+  <!-- Start Gazebo client -->
+  <node name="gazebo_gui"
+      pkg="gazebo_ros"
+      type="gzclient"
+      respawn="true"
+  />
+
+</launch>
