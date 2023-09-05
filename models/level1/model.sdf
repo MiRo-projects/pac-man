@@ -1,0 +1,7631 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='level1'>
+  <link name='Score_Point1'>
+    <collision name='Score_Point_Collision1'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual1'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+  <link name='Score_Point2'>
+    <collision name='Score_Point_Collision2'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual2'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point3'>
+    <collision name='Score_Point_Collision3'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual3'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point4'>
+    <collision name='Score_Point_Collision4'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual4'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point5'>
+    <collision name='Score_Point_Collision5'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual5'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point6'>
+    <collision name='Score_Point_Collision6'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual6'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point7'>
+    <collision name='Score_Point_Collision7'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual7'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point8'>
+    <collision name='Score_Point_Collision8'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual8'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point9'>
+    <collision name='Score_Point_Collision9'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual9'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point10'>
+    <collision name='Score_Point_Collision10'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual10'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point11'>
+    <collision name='Score_Point_Collision11'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual11'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point12'>
+    <collision name='Score_Point_Collision12'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual12'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point13'>
+    <collision name='Score_Point_Collision13'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual13'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point14'>
+    <collision name='Score_Point_Collision14'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual14'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point15'>
+    <collision name='Score_Point_Collision15'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual15'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point16'>
+    <collision name='Score_Point_Collision16'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual16'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point17'>
+    <collision name='Score_Point_Collision17'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual17'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point18'>
+    <collision name='Score_Point_Collision18'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual18'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point19'>
+    <collision name='Score_Point_Collision19'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual19'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point20'>
+    <collision name='Score_Point_Collision20'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual20'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point21'>
+    <collision name='Score_Point_Collision21'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual21'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point22'>
+    <collision name='Score_Point_Collision22'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual22'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point23'>
+    <collision name='Score_Point_Collision23'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual23'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point24'>
+    <collision name='Score_Point_Collision24'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual24'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point25'>
+    <collision name='Score_Point_Collision25'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual25'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point26'>
+    <collision name='Score_Point_Collision26'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual26'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point27'>
+    <collision name='Score_Point_Collision27'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual27'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point28'>
+    <collision name='Score_Point_Collision28'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual28'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point29'>
+    <collision name='Score_Point_Collision29'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual29'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point30'>
+    <collision name='Score_Point_Collision30'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual30'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-6.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point31'>
+    <collision name='Score_Point_Collision31'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual31'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point32'>
+    <collision name='Score_Point_Collision32'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual32'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point33'>
+    <collision name='Score_Point_Collision33'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual33'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point34'>
+    <collision name='Score_Point_Collision34'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual34'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point35'>
+    <collision name='Score_Point_Collision35'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual35'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point36'>
+    <collision name='Score_Point_Collision36'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual36'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point37'>
+    <collision name='Score_Point_Collision37'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual37'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point38'>
+    <collision name='Score_Point_Collision38'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual38'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point39'>
+    <collision name='Score_Point_Collision39'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual39'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point40'>
+    <collision name='Score_Point_Collision40'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual40'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-5.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point41'>
+    <collision name='Score_Point_Collision41'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual41'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point42'>
+    <collision name='Score_Point_Collision42'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual42'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point43'>
+    <collision name='Score_Point_Collision43'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual43'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point44'>
+    <collision name='Score_Point_Collision44'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual44'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point45'>
+    <collision name='Score_Point_Collision45'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual45'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point46'>
+    <collision name='Score_Point_Collision46'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual46'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point47'>
+    <collision name='Score_Point_Collision47'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual47'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point48'>
+    <collision name='Score_Point_Collision48'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual48'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point49'>
+    <collision name='Score_Point_Collision49'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual49'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point50'>
+    <collision name='Score_Point_Collision50'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual50'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point51'>
+    <collision name='Score_Point_Collision51'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual51'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point52'>
+    <collision name='Score_Point_Collision52'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual52'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point53'>
+    <collision name='Score_Point_Collision53'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual53'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point54'>
+    <collision name='Score_Point_Collision54'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual54'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point55'>
+    <collision name='Score_Point_Collision55'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual55'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point56'>
+    <collision name='Score_Point_Collision56'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual56'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point57'>
+    <collision name='Score_Point_Collision57'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual57'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point58'>
+    <collision name='Score_Point_Collision58'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual58'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point59'>
+    <collision name='Score_Point_Collision59'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual59'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point60'>
+    <collision name='Score_Point_Collision60'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual60'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point61'>
+    <collision name='Score_Point_Collision61'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual61'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point62'>
+    <collision name='Score_Point_Collision62'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual62'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point63'>
+    <collision name='Score_Point_Collision63'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual63'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point64'>
+    <collision name='Score_Point_Collision64'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual64'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point65'>
+    <collision name='Score_Point_Collision65'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual65'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point66'>
+    <collision name='Score_Point_Collision66'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual66'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point67'>
+    <collision name='Score_Point_Collision67'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual67'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point68'>
+    <collision name='Score_Point_Collision68'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual68'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point69'>
+    <collision name='Score_Point_Collision69'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual69'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point70'>
+    <collision name='Score_Point_Collision70'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual70'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point71'>
+    <collision name='Score_Point_Collision71'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual71'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point72'>
+    <collision name='Score_Point_Collision72'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual72'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-4.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point73'>
+    <collision name='Score_Point_Collision73'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual73'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point74'>
+    <collision name='Score_Point_Collision74'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual74'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point75'>
+    <collision name='Score_Point_Collision75'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual75'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point76'>
+    <collision name='Score_Point_Collision76'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual76'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point77'>
+    <collision name='Score_Point_Collision77'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual77'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point78'>
+    <collision name='Score_Point_Collision78'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual78'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point79'>
+    <collision name='Score_Point_Collision79'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual79'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point80'>
+    <collision name='Score_Point_Collision80'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual80'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point81'>
+    <collision name='Score_Point_Collision81'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual81'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point82'>
+    <collision name='Score_Point_Collision82'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual82'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point83'>
+    <collision name='Score_Point_Collision83'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual83'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point84'>
+    <collision name='Score_Point_Collision84'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual84'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point85'>
+    <collision name='Score_Point_Collision85'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual85'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point86'>
+    <collision name='Score_Point_Collision86'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual86'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point87'>
+    <collision name='Score_Point_Collision87'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual87'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point88'>
+    <collision name='Score_Point_Collision88'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual88'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point89'>
+    <collision name='Score_Point_Collision89'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual89'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point90'>
+    <collision name='Score_Point_Collision90'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual90'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point91'>
+    <collision name='Score_Point_Collision91'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual91'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point92'>
+    <collision name='Score_Point_Collision92'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual92'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point93'>
+    <collision name='Score_Point_Collision93'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual93'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point94'>
+    <collision name='Score_Point_Collision94'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual94'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point95'>
+    <collision name='Score_Point_Collision95'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual95'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point96'>
+    <collision name='Score_Point_Collision96'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual96'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point97'>
+    <collision name='Score_Point_Collision97'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual97'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point98'>
+    <collision name='Score_Point_Collision98'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual98'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-3.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point99'>
+    <collision name='Score_Point_Collision99'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual99'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-2.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point100'>
+    <collision name='Score_Point_Collision100'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual100'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-2.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point101'>
+    <collision name='Score_Point_Collision101'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual101'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-2.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point102'>
+    <collision name='Score_Point_Collision102'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual102'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-2.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point103'>
+    <collision name='Score_Point_Collision103'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual103'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-1.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point104'>
+    <collision name='Score_Point_Collision104'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual104'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-1.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point105'>
+    <collision name='Score_Point_Collision105'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual105'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-1.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point106'>
+    <collision name='Score_Point_Collision106'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual106'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-1.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point107'>
+    <collision name='Score_Point_Collision107'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual107'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-0.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point108'>
+    <collision name='Score_Point_Collision108'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual108'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>-0.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point109'>
+    <collision name='Score_Point_Collision109'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual109'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>0.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point110'>
+    <collision name='Score_Point_Collision110'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual110'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>0.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point111'>
+    <collision name='Score_Point_Collision111'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual111'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>0.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point112'>
+    <collision name='Score_Point_Collision112'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual112'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>0.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point113'>
+    <collision name='Score_Point_Collision113'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual113'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>1.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point114'>
+    <collision name='Score_Point_Collision114'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual114'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>1.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point115'>
+    <collision name='Score_Point_Collision115'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual115'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>1.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point116'>
+    <collision name='Score_Point_Collision116'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual116'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>1.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point117'>
+    <collision name='Score_Point_Collision117'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual117'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>2.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point118'>
+    <collision name='Score_Point_Collision118'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual118'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>2.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point119'>
+    <collision name='Score_Point_Collision119'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual119'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>2.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point120'>
+    <collision name='Score_Point_Collision120'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual120'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>2.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point121'>
+    <collision name='Score_Point_Collision121'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual121'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point122'>
+    <collision name='Score_Point_Collision122'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual122'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point123'>
+    <collision name='Score_Point_Collision123'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual123'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point124'>
+    <collision name='Score_Point_Collision124'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual124'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point125'>
+    <collision name='Score_Point_Collision125'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual125'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point126'>
+    <collision name='Score_Point_Collision126'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual126'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point127'>
+    <collision name='Score_Point_Collision127'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual127'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point128'>
+    <collision name='Score_Point_Collision128'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual128'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point129'>
+    <collision name='Score_Point_Collision129'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual129'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point130'>
+    <collision name='Score_Point_Collision130'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual130'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point131'>
+    <collision name='Score_Point_Collision131'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual131'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point132'>
+    <collision name='Score_Point_Collision132'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual132'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point133'>
+    <collision name='Score_Point_Collision133'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual133'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point134'>
+    <collision name='Score_Point_Collision134'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual134'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point135'>
+    <collision name='Score_Point_Collision135'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual135'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point136'>
+    <collision name='Score_Point_Collision136'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual136'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point137'>
+    <collision name='Score_Point_Collision137'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual137'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point138'>
+    <collision name='Score_Point_Collision138'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual138'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point139'>
+    <collision name='Score_Point_Collision139'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual139'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point140'>
+    <collision name='Score_Point_Collision140'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual140'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point141'>
+    <collision name='Score_Point_Collision141'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual141'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point142'>
+    <collision name='Score_Point_Collision142'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual142'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point143'>
+    <collision name='Score_Point_Collision143'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual143'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point144'>
+    <collision name='Score_Point_Collision144'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual144'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point145'>
+    <collision name='Score_Point_Collision145'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual145'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point146'>
+    <collision name='Score_Point_Collision146'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual146'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>3.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point147'>
+    <collision name='Score_Point_Collision147'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual147'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point148'>
+    <collision name='Score_Point_Collision148'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual148'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point149'>
+    <collision name='Score_Point_Collision149'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual149'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point150'>
+    <collision name='Score_Point_Collision150'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual150'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point151'>
+    <collision name='Score_Point_Collision151'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual151'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point152'>
+    <collision name='Score_Point_Collision152'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual152'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point153'>
+    <collision name='Score_Point_Collision153'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual153'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point154'>
+    <collision name='Score_Point_Collision154'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual154'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point155'>
+    <collision name='Score_Point_Collision155'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual155'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point156'>
+    <collision name='Score_Point_Collision156'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual156'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point157'>
+    <collision name='Score_Point_Collision157'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual157'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point158'>
+    <collision name='Score_Point_Collision158'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual158'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>4.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point159'>
+    <collision name='Score_Point_Collision159'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual159'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point160'>
+    <collision name='Score_Point_Collision160'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual160'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point161'>
+    <collision name='Score_Point_Collision161'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual161'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point162'>
+    <collision name='Score_Point_Collision162'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual162'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point163'>
+    <collision name='Score_Point_Collision163'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual163'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point164'>
+    <collision name='Score_Point_Collision164'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual164'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point165'>
+    <collision name='Score_Point_Collision165'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual165'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point166'>
+    <collision name='Score_Point_Collision166'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual166'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point167'>
+    <collision name='Score_Point_Collision167'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual167'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point168'>
+    <collision name='Score_Point_Collision168'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual168'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point169'>
+    <collision name='Score_Point_Collision169'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual169'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point170'>
+    <collision name='Score_Point_Collision170'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual170'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point171'>
+    <collision name='Score_Point_Collision171'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual171'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point172'>
+    <collision name='Score_Point_Collision172'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual172'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point173'>
+    <collision name='Score_Point_Collision173'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual173'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point174'>
+    <collision name='Score_Point_Collision174'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual174'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point175'>
+    <collision name='Score_Point_Collision175'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual175'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point176'>
+    <collision name='Score_Point_Collision176'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual176'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point177'>
+    <collision name='Score_Point_Collision177'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual177'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point178'>
+    <collision name='Score_Point_Collision178'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual178'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point179'>
+    <collision name='Score_Point_Collision179'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual179'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point180'>
+    <collision name='Score_Point_Collision180'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual180'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point181'>
+    <collision name='Score_Point_Collision181'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual181'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point182'>
+    <collision name='Score_Point_Collision182'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual182'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point183'>
+    <collision name='Score_Point_Collision183'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual183'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point184'>
+    <collision name='Score_Point_Collision184'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual184'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point185'>
+    <collision name='Score_Point_Collision185'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual185'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point186'>
+    <collision name='Score_Point_Collision186'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual186'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>5.5 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point187'>
+    <collision name='Score_Point_Collision187'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual187'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point188'>
+    <collision name='Score_Point_Collision188'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual188'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point189'>
+    <collision name='Score_Point_Collision189'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual189'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point190'>
+    <collision name='Score_Point_Collision190'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual190'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point191'>
+    <collision name='Score_Point_Collision191'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual191'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point192'>
+    <collision name='Score_Point_Collision192'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual192'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.0 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point193'>
+    <collision name='Score_Point_Collision193'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual193'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point194'>
+    <collision name='Score_Point_Collision194'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual194'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point195'>
+    <collision name='Score_Point_Collision195'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual195'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point196'>
+    <collision name='Score_Point_Collision196'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual196'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point197'>
+    <collision name='Score_Point_Collision197'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual197'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point198'>
+    <collision name='Score_Point_Collision198'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual198'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point199'>
+    <collision name='Score_Point_Collision199'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual199'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point200'>
+    <collision name='Score_Point_Collision200'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual200'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point201'>
+    <collision name='Score_Point_Collision201'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual201'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point202'>
+    <collision name='Score_Point_Collision202'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual202'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point203'>
+    <collision name='Score_Point_Collision203'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual203'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point204'>
+    <collision name='Score_Point_Collision204'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual204'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point205'>
+    <collision name='Score_Point_Collision205'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual205'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point206'>
+    <collision name='Score_Point_Collision206'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual206'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point207'>
+    <collision name='Score_Point_Collision207'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual207'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point208'>
+    <collision name='Score_Point_Collision208'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual208'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point209'>
+    <collision name='Score_Point_Collision209'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual209'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point210'>
+    <collision name='Score_Point_Collision210'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual210'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point211'>
+    <collision name='Score_Point_Collision211'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual211'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point212'>
+    <collision name='Score_Point_Collision212'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual212'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>6.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point213'>
+    <collision name='Score_Point_Collision213'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual213'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point214'>
+    <collision name='Score_Point_Collision214'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual214'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point215'>
+    <collision name='Score_Point_Collision215'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual215'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point216'>
+    <collision name='Score_Point_Collision216'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual216'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point217'>
+    <collision name='Score_Point_Collision217'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual217'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.5 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point218'>
+    <collision name='Score_Point_Collision218'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual218'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.5 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point219'>
+    <collision name='Score_Point_Collision219'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual219'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.5 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point220'>
+    <collision name='Score_Point_Collision220'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual220'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>7.5 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point221'>
+    <collision name='Score_Point_Collision221'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual221'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -7.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point222'>
+    <collision name='Score_Point_Collision222'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual222'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -7.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point223'>
+    <collision name='Score_Point_Collision223'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual223'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -6.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point224'>
+    <collision name='Score_Point_Collision224'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual224'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -6.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point225'>
+    <collision name='Score_Point_Collision225'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual225'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -5.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point226'>
+    <collision name='Score_Point_Collision226'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual226'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point227'>
+    <collision name='Score_Point_Collision227'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual227'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point228'>
+    <collision name='Score_Point_Collision228'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual228'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point229'>
+    <collision name='Score_Point_Collision229'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual229'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point230'>
+    <collision name='Score_Point_Collision230'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual230'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point231'>
+    <collision name='Score_Point_Collision231'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual231'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point232'>
+    <collision name='Score_Point_Collision232'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual232'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point233'>
+    <collision name='Score_Point_Collision233'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual233'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point234'>
+    <collision name='Score_Point_Collision234'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual234'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point235'>
+    <collision name='Score_Point_Collision235'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual235'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 -0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point236'>
+    <collision name='Score_Point_Collision236'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual236'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 0.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point237'>
+    <collision name='Score_Point_Collision237'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual237'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 0.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point238'>
+    <collision name='Score_Point_Collision238'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual238'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 1.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point239'>
+    <collision name='Score_Point_Collision239'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual239'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 1.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point240'>
+    <collision name='Score_Point_Collision240'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual240'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 2.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point241'>
+    <collision name='Score_Point_Collision241'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual241'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 2.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point242'>
+    <collision name='Score_Point_Collision242'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual242'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 3.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point243'>
+    <collision name='Score_Point_Collision243'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual243'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 3.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point244'>
+    <collision name='Score_Point_Collision244'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual244'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 4.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point245'>
+    <collision name='Score_Point_Collision245'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual245'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 4.5 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+  <link name='Score_Point246'>
+    <collision name='Score_Point_Collision246'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+    </collision>
+    <visual name='Score_Point_Visual246'>
+      <geometry>
+        <sphere>
+          <radius>0.1</radius>
+        </sphere>
+      </geometry>
+      <material>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Red</name>
+        </script>
+        <ambient>1 1 1 1</ambient>
+      </material>
+      <meta>
+        <layer>0</layer>
+      </meta>
+    </visual>
+    <pose frame=''>8.0 5.0 -0.08 0 0 0</pose>
+    <script>
+      <uri>file://scripts/score_point_script.py</uri>
+    </script>
+  </link>
+
+    <static>1</static>
+  </model>
+</sdf>
