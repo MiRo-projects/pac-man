@@ -6,14 +6,14 @@
 <node ns="pacman" 
       name="ai_controller"
       pkg="pacman"
-      type="robot_contoller.py"
+      type="robot_actuation.py"
       output="screen" 
       args="--robot_ns pacman"
 />
 <node ns="blinky" 
       name="ai_controller"
       pkg="pacman"
-      type="robot_contoller.py"
+      type="robot_actuation.py"
       output="screen" 
       args="--robot_ns blinky"
 />
@@ -21,7 +21,7 @@
 <node ns="pinky" 
       name="ai_controller"
       pkg="pacman"
-      type="robot_contoller.py"
+      type="robot_actuation.py"
       output="screen" 
       args="--robot_ns pinky"
 />
@@ -29,7 +29,7 @@
 <node ns="inky" 
       name="ai_controller"
       pkg="pacman"
-      type="robot_contoller.py"
+      type="robot_actuation.py"
       output="screen" 
       args="--robot_ns inky"
 />
@@ -37,7 +37,7 @@
 <node ns="clyde" 
       name="ai_controller"
       pkg="pacman"
-      type="robot_contoller.py"
+      type="robot_actuation.py"
       output="screen" 
       args="--robot_ns clyde"
 />

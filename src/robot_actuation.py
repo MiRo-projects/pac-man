@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-import rospy
-import rostopic
 import argparse
 from dataclasses import dataclass
 
+import rospy
+import rostopic
+from tf.transformations import euler_from_quaternion
 from geometry_msgs.msg import Twist, TwistStamped, Pose2D
 from nav_msgs.msg import Odometry
 
@@ -27,6 +28,20 @@ cli.add_argument(
     default="/gazebo_server",
     help="Gazebo topic path" 
 )
+cli.add_argument(
+    "--gazebo_ns",
+    dest="gz",
+    default="/gazebo_server",
+    help="Gazebo topic path" 
+)
+
+parser = argparse.ArgumentParser(prog='PROG')
+
+pose_control = parser.add_mutually_exclusive_group(required=True)
+
+pose_control.add_argument('--sim_pose', dest='pose_ctrl', action='store_true', default=True)
+
+pose_control.add_argument('--odom_pose', dest='pose_ctrl', action='store_false', default=False)
 
 @dataclass
 class Pose:
@@ -45,6 +60,7 @@ class RobotController:
 
         # Create node
         rospy.init_node(self.ns + "_controller", anonymous=False)
+        rospy.on_shutdown(self.shutdown_hook)
        
         # Find relevant topics within the provided ns
         pub_list = rostopic.get_topic_list()[0]  # Look through Publishers
@@ -66,7 +82,7 @@ class RobotController:
         self.vel_pub = rospy.Publisher(self.cmd_vel_topic, self.cmd_vel_msg_type, queue_size=1)
 
         self.pos_sub = rospy.Subscriber(self.odom_topic, Odometry, self.pose_cb, queue_size=1)   
-        self.rate = rospy.Rate(10)
+        self.rate = rospy.Rate(50)
 
         # we need this to be able to manipulate the object states
         self.gz_ns = str(self.args.gz)
@@ -75,10 +91,18 @@ class RobotController:
         self.robot = Pose() 
     
     def pose_cb(self, data):
-        self.robot.x = 1
-        self.robot.y = 1
-        self.robot.theta = 1
-        # print(self.robot)
+        if self.args.pose_ctrl:
+            pass
+        else:
+            self.robot.x = data.pose.pose.position.x
+            self.robot.y = data.pose.pose.position.y
+            (_, _, self.robot.yaw) = euler_from_quaternion([
+                data.pose.pose.orientation.x,
+                data.pose.pose.orientation.y,
+                data.pose.pose.orientation.z,
+                data.pose.pose.orientation.w
+                ],'sxyz')
+            print(self.robot)
   
     def pub_cmd_vel(self, linear = 1.0, angular = 0.5):
         msg = self.cmd_vel_msg_type()
@@ -157,15 +181,13 @@ class RobotController:
         # Stop moving
         self.pub_cmd_vel(0, 0)
 
-    def main_function(self):
-        rospy.on_shutdown(self.shutdown_hook)
-        # main loop to control the miro to move 
+    def main(self):
         while not rospy.is_shutdown():
             # self.turn_right() 
-            self.pub_cmd_vel()
-            self.rate.sleep()  # 控制发布指令的频率
+            # self.pub_cmd_vel()
+            self.rate.sleep()  
 
 if __name__ == "__main__":
-    miro_controller = RobotController()  # create miro object
-    miro_controller.main_function()  # start the loop
+    miro_controller = RobotController()  # instantiate robot
+    miro_controller.main()  # start the loop
 
