@@ -14,17 +14,35 @@
   <!-- Specify which .world file to load -->
   <arg name="world" default="$(find pacman)/worlds/pacman.world"/>
 
-  <arg name="node_start_delay" default="0.5" /> 
+  <arg name="node_start_delay" default="0.0" /> 
 
   <!-- start Gazebo server with exposed ROS interface-->
-  <arg name="gazebo_ns" default="gazebo_server" doc="Gazebo namespace, typically 'gazebo' or 'gazebo_server'" />
+  <arg name="gazebo_ns" default="gazebo_server" 
+        doc="Gazebo namespace, typically 'gazebo' or 'gazebo_server'" />
   <node name="$(arg gazebo_ns)"
       pkg="gazebo_ros"
       type="gzserver"
-      respawn="false"
       required="true"
       args="--physics ode --verbose $(arg world)"
   />
+
+  <!-- Spawn a MiRo (Pac-man) -->
+  <arg name="pacman_ns" default="pacman" doc="namespace (prefix) for 'pacman' robot" />
+  <arg name="x_pacman" default="0.0"/>
+  <arg name="y_pacman" default="0"/>
+  <arg name="z_pacman" default="0"/>
+  <arg name="Y_pacman" default="0"/>
+
+  <node name="spawn_pacman" pkg="gazebo_ros" type="spawn_model" ns="$(arg pacman_ns)" 
+        respawn="false" respawn_delay="5" 
+        args="-sdf -model $(arg pacman_ns) 
+          -file $(optenv MIRO_DIR_MDK)/sim/models/miro_model/miro_model.sdf 
+          -gazebo_namespace /$(arg gazebo_ns) 
+          -x $(arg x_pacman) -y $(arg y_pacman) 
+          -z $(arg z_pacman) -Y $(arg Y_pacman)" />
+
+ <node name="spawn_delay" pkg="roscpp_tutorials" type="listener" 
+        launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
 
   <!-- Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) — -->
 
@@ -43,6 +61,7 @@
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
   <node name="spawn_blinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg blinky_ns)" 
+        respawn="false" respawn_delay="5" 
         args="-urdf -model blinky -param $(arg blinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_blinky) -y $(arg y_blinky) -z $(arg z_blinky) -Y $(arg Y_blinky)" />
 
   <!-- Spawn Pinky (pink) -->
@@ -57,6 +76,7 @@
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
   <node name="spawn_pinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg pinky_ns)" 
+        respawn="false" respawn_delay="5" 
         args="-urdf -model pinky -param $(arg pinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_pinky) -y $(arg y_pinky) -z $(arg z_pinky) -Y $(arg Y_pinky)" />
 
  <!-- Spawn Inky (cyan) -->
@@ -71,6 +91,7 @@
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
   <node name="spawn_inky" pkg="gazebo_ros" type="spawn_model" ns="$(arg inky_ns)" 
+        respawn="false" respawn_delay="5" 
         args="-urdf -model inky -param $(arg inky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_inky) -y $(arg y_inky) -z $(arg z_inky) -Y $(arg Y_inky)" />
 
   <!-- Spawn Clyde (orange) -->
@@ -85,21 +106,8 @@
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
   <node name="spawn_clyde" pkg="gazebo_ros" type="spawn_model" ns="$(arg clyde_ns)" 
+        respawn="false" respawn_delay="5" 
         args="-urdf -model clyde -param $(arg clyde_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_clyde) -y $(arg y_clyde) -z $(arg z_clyde) -Y $(arg Y_clyde)" />
-
-
-  <node name="spawn_delay" pkg="roscpp_tutorials" type="listener" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
-
-  <!-- Spawn a MiRo (Pac-man) -->
-  <arg name="pacman_ns" default="pacman" doc="namespace (prefix) for 'pacman' robot" />
-  <arg name="x_pacman" default="0.0"/>
-  <arg name="y_pacman" default="0"/>
-  <arg name="z_pacman" default="0"/>
-  <arg name="Y_pacman" default="0"/>
-
-  <node name="spawn_pacman" pkg="gazebo_ros" type="spawn_model" ns="$(arg pacman_ns)" 
-        args="-sdf -model $(arg pacman_ns) -file $(optenv MIRO_DIR_MDK)/sim/models/miro_model/miro_model.sdf -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_pacman) -y $(arg y_pacman) -z $(arg z_pacman) -Y $(arg Y_pacman)" />
-
 
   <!-- Start Gazebo client -->
   <node name="gazebo_gui"
