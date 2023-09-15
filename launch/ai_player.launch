@@ -2,50 +2,32 @@
 <!-- Launch file for AI-controlled Pac-man game.  -->
 <!-- Requires manually launching 'game' first.  -->
 <launch>
+  <arg name="ghost_n" default="04" doc="Specify how many ghosts to load"/>
 
-<node ns="pacman" 
-      name="ai_controller"
-      pkg="pacman"
-      type="robot_actuation.py"
-      output="screen" 
-      args="--robot_ns pacman"
-/>
-<node ns="blinky" 
-      name="ai_controller"
-      pkg="pacman"
-      type="robot_actuation.py"
-      output="screen" 
-      args="--robot_ns blinky"
-/>
+  <node ns="pacman" name="ai_controller" pkg="pacman" 
+    type="robot_actuation.py" output="screen" args="--robot_ns pacman --sim_pose" />
+  
+  <group if="$(eval ghost_n >= 1)">
+    <node ns="blinky" name="ai_controller" pkg="pacman" 
+    type="robot_actuation.py" output="screen" args="--robot_ns blinky --odom_pose" />
+  </group>
 
-<node ns="pinky" 
-      name="ai_controller"
-      pkg="pacman"
-      type="robot_actuation.py"
-      output="screen" 
-      args="--robot_ns pinky"
-/>
+  <group if="$(eval ghost_n >= 2)">
+    <node ns="pinky" name="ai_controller" pkg="pacman" 
+    type="robot_actuation.py" output="screen" args="--robot_ns pinky --odom_pose" />
+  </group>
 
-<node ns="inky" 
-      name="ai_controller"
-      pkg="pacman"
-      type="robot_actuation.py"
-      output="screen" 
-      args="--robot_ns inky"
-/>
+  <group if="$(eval ghost_n >= 3)">
+    <node ns="inky" name="ai_controller" pkg="pacman" 
+    type="robot_actuation.py" output="screen" args="--robot_ns inky --odom_pose" />
+  </group>
 
-<node ns="clyde" 
-      name="ai_controller"
-      pkg="pacman"
-      type="robot_actuation.py"
-      output="screen" 
-      args="--robot_ns clyde"
-/>
+  <group if="$(eval ghost_n >= 4)">
+    <node ns="clyde" name="ai_controller" pkg="pacman" 
+    type="robot_actuation.py" output="screen" args="--robot_ns clyde --odom_pose" />
+  </group>
 
-<node name="scorekeeper"
-      pkg="pacman"
-      type="scorekeeper.py"
-      output="screen" 
-/>
+  <node name="scorekeeper" pkg="pacman" 
+    type="scorekeeper.py" output="screen" />
 
 </launch>

@@ -2,6 +2,14 @@
 <!-- Launch file for Pac-man game.  -->
 <!-- Includes Turtlebot3 and MiRo, which depends on working TB3 and MDK packages -->
 <launch>
+  <!-- ARGUMENTS -->
+  <arg name="world" default="$(find pacman)/worlds/level01.world"
+    doc="Specify which world file to load"/>
+  <arg name="ghost_n" default="04" doc="Specify how many ghosts to load"/>
+  <arg name="gazebo_ns" default="gazebo_server"
+        doc="Gazebo namespace, typically 'gazebo' or 'gazebo_server'" />
+  <arg name="ghost_model" default="$(optenv TURTLEBOT3_MODEL waffle)"
+      doc="TB3 model type [burger, waffle, waffle_pi]"/>
 
   <!-- Add custom Gazebo paths -->
   <env name="GAZEBO_MODEL_PATH"
@@ -11,12 +19,7 @@
   <env name="GAZEBO_PLUGIN_PATH"
       value="$(optenv MIRO_DIR_MDK)/bin/${MIRO_SYSTEM}:$(optenv GAZEBO_PLUGIN_PATH)" />
 
-  <!-- Specify which .world file to load -->
-  <arg name="world" default="$(find pacman)/worlds/pacman.world"/>
-
   <!-- start Gazebo server with exposed ROS interface-->
-  <arg name="gazebo_ns" default="gazebo_server" 
-        doc="Gazebo namespace, typically 'gazebo' or 'gazebo_server'" />
   <node name="$(arg gazebo_ns)"
       pkg="gazebo_ros"
       type="gzserver"
@@ -26,69 +29,74 @@
 
   <!-- Blinky (red), Pinky (pink), Inky (cyan), and Clyde (orange) — -->
 
-  <arg name="ghost_model" default="$(optenv TURTLEBOT3_MODEL waffle)"
-      doc="TB3 model type [burger, waffle, waffle_pi]"/>
+  <group if="$(eval ghost_n >= 1)">
+    <!-- Spawn Blinky (red) -->
+    <arg name="blinky_ns" default="/blinky" doc="namespace (prefix) for Blinky ghost" />
 
-  <!-- Spawn Blinky (red) -->
-  <arg name="blinky_ns" default="/blinky" doc="namespace (prefix) for Blinky ghost" />
+    <arg name="x_blinky" default="6"/>
+    <arg name="y_blinky" default="0"/>
+    <arg name="z_blinky" default="0"/>
+    <arg name="Y_blinky" default="1.57"/>
 
-  <arg name="x_blinky" default="6"/>
-  <arg name="y_blinky" default="0"/>
-  <arg name="z_blinky" default="0"/>
-  <arg name="Y_blinky" default="1.57"/>
+    <param name="$(arg blinky_ns)/robot_description"
+      command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
-  <param name="$(arg blinky_ns)/robot_description"
-    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
+    <node name="spawn_blinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg blinky_ns)"
+          respawn="false" respawn_delay="5"
+          args="-urdf -model blinky -param $(arg blinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_blinky) -y $(arg y_blinky) -z $(arg z_blinky) -Y $(arg Y_blinky)" />
+  </group>
 
-  <node name="spawn_blinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg blinky_ns)" 
-        respawn="false" respawn_delay="5" 
-        args="-urdf -model blinky -param $(arg blinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_blinky) -y $(arg y_blinky) -z $(arg z_blinky) -Y $(arg Y_blinky)" />
+  <group if="$(eval ghost_n >= 2)">
+    <!-- Spawn Pinky (pink) -->
+    <arg name="pinky_ns" default="/pinky" doc="namespace (prefix) for Pinky ghost" />
 
-  <!-- Spawn Pinky (pink) -->
-  <arg name="pinky_ns" default="/pinky" doc="namespace (prefix) for Pinky ghost" />
+    <arg name="x_pinky" default="4.5"/>
+    <arg name="y_pinky" default="0"/>
+    <arg name="z_pinky" default="0"/>
+    <arg name="Y_pinky" default="0"/>
 
-  <arg name="x_pinky" default="4.5"/>
-  <arg name="y_pinky" default="0"/>
-  <arg name="z_pinky" default="0"/>
-  <arg name="Y_pinky" default="0"/>
+    <param name="$(arg pinky_ns)/robot_description"
+      command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
-  <param name="$(arg pinky_ns)/robot_description"
-    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
+    <node name="spawn_pinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg pinky_ns)"
+          respawn="false" respawn_delay="5"
+          args="-urdf -model pinky -param $(arg pinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_pinky) -y $(arg y_pinky) -z $(arg z_pinky) -Y $(arg Y_pinky)" />
+ </group>
 
-  <node name="spawn_pinky" pkg="gazebo_ros" type="spawn_model" ns="$(arg pinky_ns)" 
-        respawn="false" respawn_delay="5" 
-        args="-urdf -model pinky -param $(arg pinky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_pinky) -y $(arg y_pinky) -z $(arg z_pinky) -Y $(arg Y_pinky)" />
+  <group if="$(eval ghost_n >= 3)">
+    <!-- Spawn Inky (cyan) -->
+    <arg name="inky_ns" default="/inky" doc="namespace (prefix) for Inky ghost" />
 
- <!-- Spawn Inky (cyan) -->
-  <arg name="inky_ns" default="/inky" doc="namespace (prefix) for Inky ghost" />
+    <arg name="x_inky" default="4.5"/>
+    <arg name="y_inky" default="1"/>
+    <arg name="z_inky" default="0"/>
+    <arg name="Y_inky" default="0"/>
 
-  <arg name="x_inky" default="4.5"/>
-  <arg name="y_inky" default="1"/>
-  <arg name="z_inky" default="0"/>
-  <arg name="Y_inky" default="0"/>
+    <param name="$(arg inky_ns)/robot_description"
+      command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
-  <param name="$(arg inky_ns)/robot_description"
-    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
+    <node name="spawn_inky" pkg="gazebo_ros" type="spawn_model" ns="$(arg inky_ns)"
+          respawn="false" respawn_delay="5"
+          args="-urdf -model inky -param $(arg inky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_inky) -y $(arg y_inky) -z $(arg z_inky) -Y $(arg Y_inky)" />
+ </group>
 
-  <node name="spawn_inky" pkg="gazebo_ros" type="spawn_model" ns="$(arg inky_ns)" 
-        respawn="false" respawn_delay="5" 
-        args="-urdf -model inky -param $(arg inky_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_inky) -y $(arg y_inky) -z $(arg z_inky) -Y $(arg Y_inky)" />
+  <group if="$(eval ghost_n >= 4)">
+    <!-- Spawn Clyde (orange) -->
+    <arg name="clyde_ns" default="/clyde" doc="namespace (prefix) for Clyde ghost" />
 
-  <!-- Spawn Clyde (orange) -->
-  <arg name="clyde_ns" default="/clyde" doc="namespace (prefix) for Clyde ghost" />
+    <arg name="x_clyde" default="4.5"/>
+    <arg name="y_clyde" default="-1"/>
+    <arg name="z_clyde" default="0"/>
+    <arg name="Y_clyde" default="0"/>
 
-  <arg name="x_clyde" default="4.5"/>
-  <arg name="y_clyde" default="-1"/>
-  <arg name="z_clyde" default="0"/>
-  <arg name="Y_clyde" default="0"/>
+    <param name="$(arg clyde_ns)/robot_description"
+      command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
 
-  <param name="$(arg clyde_ns)/robot_description"
-    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_$(arg ghost_model).urdf.xacro" />
+    <node name="spawn_clyde" pkg="gazebo_ros" type="spawn_model" ns="$(arg clyde_ns)"
+          respawn="false" respawn_delay="5"
+          args="-urdf -model clyde -param $(arg clyde_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_clyde) -y $(arg y_clyde) -z $(arg z_clyde) -Y $(arg Y_clyde)" />
+  </group>
 
-  <node name="spawn_clyde" pkg="gazebo_ros" type="spawn_model" ns="$(arg clyde_ns)" 
-        respawn="false" respawn_delay="5" 
-        args="-urdf -model clyde -param $(arg clyde_ns)/robot_description -gazebo_namespace /$(arg gazebo_ns) -x $(arg x_clyde) -y $(arg y_clyde) -z $(arg z_clyde) -Y $(arg Y_clyde)" />
- 
   <!-- Spawn a MiRo (Pac-man) -->
   <arg name="pacman_ns" default="pacman" doc="namespace (prefix) for 'pacman' robot" />
   <arg name="x_pacman" default="0.0"/>
@@ -96,15 +104,12 @@
   <arg name="z_pacman" default="0"/>
   <arg name="Y_pacman" default="0"/>
 
-  <test test-name="spawn_delay" pkg="pacman" type="spawn_delay.py" time-limit="10.0"/>
-
-  <node name="spawn_pacman" pkg="gazebo_ros" type="spawn_model" ns="$(arg pacman_ns)" 
-         args="-sdf -model $(arg pacman_ns) 
-          -file $(optenv MIRO_DIR_MDK)/sim/models/miro_model/miro_model.sdf 
-          -gazebo_namespace /$(arg gazebo_ns) 
-          -x $(arg x_pacman) -y $(arg y_pacman) 
+  <node name="spawn_pacman" pkg="gazebo_ros" type="spawn_model" ns="$(arg pacman_ns)"
+         args="-sdf -model $(arg pacman_ns)
+          -file $(optenv MIRO_DIR_MDK)/sim/models/miro_model/miro_model.sdf
+          -gazebo_namespace /$(arg gazebo_ns)
+          -x $(arg x_pacman) -y $(arg y_pacman)
           -z $(arg z_pacman) -Y $(arg Y_pacman)" />
-
 
   <!-- Start Gazebo client -->
   <node name="gazebo_gui"

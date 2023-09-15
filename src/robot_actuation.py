@@ -7,15 +7,21 @@ import rospy
 import rostopic
 from tf.transformations import euler_from_quaternion
 from geometry_msgs.msg import Twist, TwistStamped, Pose2D
+from gazebo_msgs.srv import GetModelState
 from nav_msgs.msg import Odometry
+from std_msgs.msg import UInt32
+import miro2 as miro
 
 
 # parse args
 cli = argparse.ArgumentParser(
     prog='AI_Pac-man',
-    description='Script to control the Pac-man and Ghosts autonomously', 
+    description='Script to control the Pac-man and Ghosts autonomously',
     epilog='Good luck!'
 )
+pose_control = cli.add_mutually_exclusive_group()
+pose_control.add_argument('--sim_pose', dest='pose_ctrl', action='store_true', default=True)
+pose_control.add_argument('--odom_pose', dest='pose_ctrl', action='store_false', default=False)
 cli.add_argument(
     "--robot_ns",
     dest="ns",
@@ -26,73 +32,91 @@ cli.add_argument(
     "--gazebo_ns",
     dest="gz",
     default="/gazebo_server",
-    help="Gazebo topic path" 
+    help="Gazebo topic path"
 )
-cli.add_argument(
-    "--gazebo_ns",
-    dest="gz",
-    default="/gazebo_server",
-    help="Gazebo topic path" 
-)
-
-parser = argparse.ArgumentParser(prog='PROG')
-
-pose_control = parser.add_mutually_exclusive_group(required=True)
-
-pose_control.add_argument('--sim_pose', dest='pose_ctrl', action='store_true', default=True)
-
-pose_control.add_argument('--odom_pose', dest='pose_ctrl', action='store_false', default=False)
 
 @dataclass
 class Pose:
     x: float = 0.0
     y: float = 0.0
-    theta: float = 0.0
+    yaw: float = 0.0
 
 class RobotController:
     def __init__(self):
 
-        # Process args and params
+        # Process args
         self.args = cli.parse_args(rospy.myargv()[1:])
 
         self.ns = str(self.args.ns)
         self.ns = self.ns[1:] if self.ns[0] == '/' else self.ns # for consistency
+        self.gz_ns = str(self.args.gz)
+        self.gz_ns = self.gz_ns[1:] if self.gz_ns[0] == '/' else self.gz_ns # same
 
         # Create node
         rospy.init_node(self.ns + "_controller", anonymous=False)
         rospy.on_shutdown(self.shutdown_hook)
-       
+
         # Find relevant topics within the provided ns
         pub_list = rostopic.get_topic_list()[0]  # Look through Publishers
-        self.odom_topic = [t[0] for t in pub_list 
-                        if ('/' + self.ns in t[0] and 'odom' in t[0])][0]  
-        sub_list = rostopic.get_topic_list()[1]  # Look through Subscribers
-
-        self.cmd_vel_topic = [t[0] for t in sub_list 
-                              if ('/' + self.ns in t[0] and 'cmd_vel' in t[0])][0]
+        self.odom_topic = [t[0] for t in pub_list
+                        if ('/' + self.ns in t[0] and 'odom' in t[0])]
         if not self.odom_topic:
             print(f"Could not find the required /odom topic for the namespace {self.ns}")
             raise SystemExit
+        self.odom_topic = self.odom_topic[0]
+
+        sub_list = rostopic.get_topic_list()[1]  # Look through Subscribers
+        self.cmd_vel_topic = [t[0] for t in sub_list
+                              if ('/' + self.ns in t[0] and 'cmd_vel' in t[0])]
+  
         if not self.cmd_vel_topic:
             print(f"Could not find the required /cmd_vel topic for the namespace {self.ns}")
-            raise SystemExit        
+            raise SystemExit
+        self.cmd_vel_topic = self.cmd_vel_topic[0]
 
-        # Create Publishers and Subscribers       
-        self.cmd_vel_msg_type, topic_str, _ = rostopic.get_topic_class(self.cmd_vel_topic)    
-        self.vel_pub = rospy.Publisher(self.cmd_vel_topic, self.cmd_vel_msg_type, queue_size=1)
-
-        self.pos_sub = rospy.Subscriber(self.odom_topic, Odometry, self.pose_cb, queue_size=1)   
+        # Create Publishers and Subscribers
+        self.cmd_vel_msg_type, topic_str, _ = rostopic.get_topic_class(self.cmd_vel_topic)
+        self.vel_pub = rospy.Publisher(self.cmd_vel_topic, 
+                                       self.cmd_vel_msg_type,
+                                       queue_size=1,
+                                       latch=True
+                                       )
+        self.pos_sub = rospy.Subscriber(self.odom_topic,
+                                        Odometry,
+                                        self.pose_cb,
+                                        queue_size=1
+                                        )
+        if self.args.pose_ctrl:
+            self.sim_pose = rospy.ServiceProxy('/'+self.gz_ns+'/get_model_state',
+                                               GetModelState)
+        # Create variables and params
+        self.robot = Pose()
         self.rate = rospy.Rate(50)
 
-        # we need this to be able to manipulate the object states
-        self.gz_ns = str(self.args.gz)
-        
-        # Create variables
-        self.robot = Pose() 
-    
+        # MiRo bridge flags, if we're controlling Pac-man
+        self.flag_topic = [t[0] for t in sub_list
+                              if ('/' + self.ns in t[0] and 'flags' in t[0])]
+        if self.flag_topic:
+            self.flag_topic = self.flag_topic[0]
+            self.flags = miro.constants.PLATFORM_D_FLAG_DISABLE_CLIFF_REFLEX
+            self.flags |= miro.constants.PLATFORM_D_FLAG_PERSISTENT
+            self.flags_pub = rospy.Publisher(self.flag_topic, 
+                                             UInt32,
+                                             queue_size=1,
+                                             latch=True)
+
     def pose_cb(self, data):
         if self.args.pose_ctrl:
-            pass
+            ##TODO This shouldn't really be here    
+            payload = self.sim_pose(self.ns, "")
+            self.robot.x = payload.pose.position.x
+            self.robot.y = payload.pose.position.y
+            (_, _, self.robot.yaw) = euler_from_quaternion([
+                payload.pose.orientation.x,
+                payload.pose.orientation.y,
+                payload.pose.orientation.z,
+                payload.pose.orientation.w
+                ],'sxyz')
         else:
             self.robot.x = data.pose.pose.position.x
             self.robot.y = data.pose.pose.position.y
@@ -102,90 +126,59 @@ class RobotController:
                 data.pose.pose.orientation.z,
                 data.pose.pose.orientation.w
                 ],'sxyz')
-            print(self.robot)
-  
-    def pub_cmd_vel(self, linear = 1.0, angular = 0.5):
+
+    def pub_cmd_vel(self, linear = 0, angular = 0):
+        if self.flag_topic:
+            self.flags_pub.publish(UInt32(self.flags))
         msg = self.cmd_vel_msg_type()
         if self.cmd_vel_msg_type is TwistStamped:
             msg.twist.linear.x = linear
-            msg.twist.angular.z = angular 
+            msg.twist.angular.z = angular
         elif self.cmd_vel_msg_type is Twist:
-            msg.linear.x = linear 
-            msg.angular.z = angular 
+            msg.linear.x = linear
+            msg.angular.z = angular
         else:
             print("Unknown format of /cmd_vel message")
             raise SystemExit
         self.vel_pub.publish(msg)
-        
+
 
     def move_forward(self):
-        msg_cmd_vel.linear.x = 1.0
-        msg_cmd_vel.angular.z = 0.0  
+        self.pub_cmd_vel(1, 0)
 
     def move_back(self):
-
-        msg_cmd_vel = self.cmd_vel_msg_type()
-
-        
-        self.vel_pub.publish(msg_cmd_vel)
+        self.pub_cmd_vel(-1, 0)
 
     def turn_left(self):
-
-        msg_cmd_vel = self.cmd_vel_msg_type()
-        msg_cmd_vel.linear.x = 0.0
-        msg_cmd_vel.angular.z = 0.2  
-
-        angular_distance = 1.5708  # 90 degrees in radians
-        rotation_time = angular_distance / 0.2
-
-        start_time = rospy.get_time()
-        while rospy.get_time() - start_time < rotation_time and not rospy.is_shutdown():
-            self.vel_pub.publish(msg_cmd_vel)
-            rospy.sleep(0.1)
-
-        msg_cmd_vel.angular.z = 0.0
-        
-        self.vel_pub.publish(msg_cmd_vel)
+        self.pub_cmd_vel(0, -1)
 
     def turn_right(self):
+        self.pub_cmd_vel(0, 1)
 
-        msg_cmd_vel = self.cmd_vel_msg_type()
-        msg_cmd_vel.linear.x = 0.0
-        msg_cmd_vel.angular.z = -0.4  # Adjust the angular velocity
-
-        self.vel_pub.publish(msg_cmd_vel)
-
-        start_time = rospy.Time.now()
-        rotate_duration = rospy.Duration.from_sec(2.25)  # Adjust as needed
-
-        rate = rospy.Rate(10)  # Control loop rate
-        while not rospy.is_shutdown():
-            if rospy.Time.now() - start_time >= rotate_duration:
-                # Stop the rotation
-                msg_cmd_vel.angular.z = 0.0
-                self.vel_pub.publish(msg_cmd_vel)
-                break
-
-            self.vel_pub.publish(msg_cmd_vel)
-            rate.sleep()
-        
     def stop(self):
-        
-        msg_cmd_vel = self.cmd_vel_msg_type()
-        msg_cmd_vel.linear.x = 0.0
-        msg_cmd_vel.angular.z = 0.0
-        
-        self.vel_pub.publish(msg_cmd_vel)
+        self.pub_cmd_vel(0, 0)
 
     def shutdown_hook(self):
         # Stop moving
+        rospy.sleep(0.3)
         self.pub_cmd_vel(0, 0)
 
     def main(self):
         while not rospy.is_shutdown():
-            # self.turn_right() 
-            # self.pub_cmd_vel()
-            self.rate.sleep()  
+            # self.turn_right()
+            self.move_forward()
+            rospy.sleep(1)
+
+            self.move_back()
+            rospy.sleep(1)
+
+            self.turn_left()
+            rospy.sleep(1)
+
+            self.turn_right()
+            rospy.sleep(1)
+
+            self.rate.sleep()
 
 if __name__ == "__main__":
     miro_controller = RobotController()  # instantiate robot
